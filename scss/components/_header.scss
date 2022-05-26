@@ -1,0 +1,17 @@
+.header{
+  width: 1180px;
+  height: 100px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  border: 1px solid blue;
+  margin:0 auto;  
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  // position: fixed;
+}

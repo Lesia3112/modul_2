@@ -1,0 +1,15 @@
+.social{
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  
+  &__icon{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

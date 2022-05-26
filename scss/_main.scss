@@ -1,6 +1,21 @@
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
+}
+.wrapper{
   max-width: 1600px;
+  margin: 0 auto;
+  height: 100vh;
+  border: 1px solid red;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: white;
 }

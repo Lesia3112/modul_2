@@ -1,0 +1,23 @@
+.banner{
+  min-width: 100vh;
+  position: relative;
+  // background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  &__wrapper{
+    &__img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      
+    }
+    &__bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+    }
+  }
+}
+
