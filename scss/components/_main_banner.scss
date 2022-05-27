@@ -1,23 +1,42 @@
-.banner{
+.banner {
   min-width: 100vh;
   position: relative;
-  // background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
-  &__wrapper{
-    &__img{
+  &__wrapper {
+    &__bg {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      opacity: 0;
-      
     }
-    &__bg{
+    &__img {
       position: absolute;
       top: 0;
+      opacity: 1;
       left: 0;
       right: 0;
-      z-index: 20;
     }
   }
+  &__title{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 130px;
+    color: $c-white;
+    font-family:$f-montserrat;
+    font-weight: 700;
+    font-size: 80px;
+    
+  }
+    &__subTitle{
+      font-family: $f-montserrat;
+      font-weight: 400;
+      font-size: 18px;
+      color: $c-white;
+      line-height: 22px;
+      letter-spacing: 0.3em;
+      text-align: center;
+      margin-top: 20px;
+  }
 }
-

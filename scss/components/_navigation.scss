@@ -9,9 +9,15 @@
     &__circle{
       height: 7px;
       width: 7px;
-      border: 1px solid black;
+      border: 1px solid $c-white;
       border-radius: 50%;
       margin-right: 10px;
+    }
+    &__link{
+      color: $c-white;
+      text-decoration: none;
+      font-family: $f-sourceSansPro;
+      font-size: $fs-14;
     }
   }
 }
