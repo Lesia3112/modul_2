@@ -1,7 +1,13 @@
 .social{
   display: flex;
-  width: 180px;
   justify-content: space-between;
+  width: 100%;
+  @media(max-width:1024px){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
   
   &__icon{
     height: 40px;
@@ -11,5 +17,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 5px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
 }

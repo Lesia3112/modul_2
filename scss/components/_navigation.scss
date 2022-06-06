@@ -1,14 +1,25 @@
 .navigation{
   display: flex;
-  justify-content: space-around;
-  width: 600px;
+  justify-content:end;
+  width: 100%;
+  @media(max-width:1024px){
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+  }
+
   &__item{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
+    @media(max-width:1024px){
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
     &__circle{
-      height: 7px;
-      width: 7px;
+      height: 9px;
+      width: 9px;
       border: 1px solid $c-white;
       border-radius: 50%;
       margin-right: 10px;
