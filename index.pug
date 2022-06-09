@@ -1,20 +1,30 @@
 include ./includes/elements/index
 include ./includes/components/index
 
+
 doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Monticello
     //- normalize
-    link(rel="stylesheet", href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+    link(rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
+    //- fontawesome
+    script(src="https://kit.fontawesome.com/65ada48525.js" crossorigin="anonymous")
+    //- Swiper
+    link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
     //- local style
-    link(rel="stylesheet", href="index.css")
+    link(rel="stylesheet" href="index.css")
+    //- Scripts
+    script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
   body
     include ./assets/svg/symbol-defs.svg
-    .wrapper 
-      +header()
-      +main_banner()
-    script(src="./index.js") 
+    .container
+      .wrapper 
+        +header()
+        +main_banner()
+        +we-do()
+        +slider()
+    script(defer type="module" src="./index.js") 

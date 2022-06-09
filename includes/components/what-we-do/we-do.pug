@@ -1,0 +1,12 @@
+include ./content
+include ./content-revers
+
+mixin we-do()
+  .we-do
+    .we-do__border
+    h2.we-do__title WHAT WE DO 
+    .we-do__imgBlock 
+      +content()
+    .we-do__content
+      +content-revers()
+    

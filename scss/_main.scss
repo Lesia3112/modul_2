@@ -2,12 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+ 
 
 }
 .wrapper{
   max-width: 1600px;
   margin: 0 auto;
   height: 100vh;
+  // height: 800px;
+  
+}
+.container{
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  color: $c-dark-gray;
+
+
 }
 .icon {
   display: inline-block;
@@ -20,4 +31,12 @@
 }
 .show{
   display: block;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.swiper-custom{
+  background-color: $g-linear-gradient;
 }

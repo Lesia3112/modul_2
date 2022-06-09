@@ -1,8 +1,13 @@
 // colors
 $c-black: black;
 $c-white: white;
+$c-milk:#E5E5E5;
+$c-blue-sky:#55B7FF;
+$c-blue:#7E5AFF;
+$c-dark-gray:#2C4058;
 
-$g-linear-gradient:(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+$g-linear-gradient:linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+
 
 
 // fonts
@@ -11,6 +16,7 @@ $f-openSans: 'Open Sans', sans-serif;
 $f-sourceSansPro: 'Source Sans Pro', sans-serif;
 
 // font size
-$fs-14:14 px;
-$fs-18:18 px;
-$fs-44:44 px;
+$fs-14:14+px;
+$fs-18:18+px;
+$fs-22:22+px;
+$fs-44:44+px;

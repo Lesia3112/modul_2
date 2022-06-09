@@ -1,19 +1,22 @@
 .banner {
   min-width: 100vh;
-  position: relative;
+  // position: relative;
   &__wrapper {
+    background:$g-linear-gradient;
+
     &__bg {
-      position: absolute;
+      position: relative;
+      width: 100%;
       top: 0;
       left: 0;
       right: 0;
-    }
-    &__img {
-      position: absolute;
-      top: 0;
-      opacity: 1;
-      left: 0;
-      right: 0;
+      &__img {
+        position: absolute;
+        top: 0;
+        opacity: 1;
+        left: 0;
+        right: 0;
+      }
     }
   }
   &__title{

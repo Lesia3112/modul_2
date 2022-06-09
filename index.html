@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <script src="https://kit.fontawesome.com/65ada48525.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body><svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
@@ -22,59 +25,110 @@
 </defs>
 </svg>
 
-    <div class="wrapper"> 
-      <header class="header"> 
-        <div class="header__logo">
-          <div class="logo"> <img class="logo__img" src="./assets/img/logo.png" alt="logo"/></div>
-        </div>
-        <div class="header__block" id="js-header-block">
-          <div class="header__block__navigation">
-            <div class="navigation"> 
-              <div class="navigation__item"> 
-                <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>ABOUT US</span></a>
+    <div class="container">
+      <div class="wrapper"> 
+        <header class="header"> 
+          <div class="header__logo">
+            <div class="logo"> <img class="logo__img" src="./assets/img/logo.png" alt="logo"/></div>
+          </div>
+          <div class="header__block" id="js-header-block">
+            <div class="header__block__navigation">
+              <div class="navigation"> 
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>ABOUT US</span></a>
+                </div>
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>PRODJECT</span></a>
+                </div>
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>NEWS</span></a>
+                </div>
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>CONTACT</span></a>
+                </div>
               </div>
-              <div class="navigation__item"> 
-                <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>PRODJECT</span></a>
-              </div>
-              <div class="navigation__item"> 
-                <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>NEWS</span></a>
-              </div>
-              <div class="navigation__item"> 
-                <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>CONTACT</span></a>
+            </div>
+            <div class="header__block__social">
+              <div class="social"> 
+                <div class="social__icon">
+                  <svg class="icon icon-fb">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </div>
+                <div class="social__icon">
+                  <svg class="icon icon-inst">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                </div>
+                <div class="social__icon">
+                  <svg class="icon icon-tv">
+                    <use xlink:href="#icon-tv"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
-          <div class="header__block__social">
-            <div class="social"> 
-              <div class="social__icon">
-                <svg class="icon icon-fb">
-                  <use xlink:href="#icon-fb"></use>
-                </svg>
+          <div class="header__burger">
+            <button class="burger" id="js-header-burger"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+          </div>
+        </header>
+        <div class="banner">
+          <div class="banner__wrapper">
+            <div class="banner__wrapper__bg"></div><img class="banner__wrapper__img" src="./assets/banner/banner_img.png" alt="city"/>
+          </div>
+          <h1 class="banner__title">SIMPLE & MODERN
+            <div class="banner__subTitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</div>
+          </h1>
+        </div>
+        <div class="we-do">
+          <div class="we-do__border"></div>
+          <h2 class="we-do__title">WHAT WE DO </h2>
+          <div class="we-do__imgBlock"> 
+            <div class="imgBlock"> 
+              <div class="imgBlock__color"></div>
+              <div class="imgBlock__city"><img class="imgBlock__img" src="./assets/img/we_do/blue-sky-absolute.png" alt="town"/></div>
+            </div>
+            <div class="infoBlock">
+              <div class="infoBlock__subtitle">ONE WORLD</div>
+              <div class="infoBlock__title">TRADE CENTER</div>
+              <div class="infoBlock__content">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful. </div>
+              <div class="infoBlock__button"> 
+                <button class="infoBlock__button" type="button"><span class="infoBlock__button__text">MORE DETAILS</span></button>
               </div>
-              <div class="social__icon">
-                <svg class="icon icon-inst">
-                  <use xlink:href="#icon-inst"></use>
-                </svg>
-              </div>
-              <div class="social__icon">
-                <svg class="icon icon-tv">
-                  <use xlink:href="#icon-tv"></use>
-                </svg>
-              </div>
+              <div class="infoBlock__location"> <i class="fa-solid fa-location-dot infoBlock__location__icon"></i><span class="infoBlock__location__text">New York City, United States - 1776 feet </span></div>
             </div>
           </div>
+          <div class="we-do__content">
+            <div class="infoBlock">
+              <div class="infoBlock__subtitle">INTERNATIONAL</div>
+              <div class="infoBlock__title">COMMERCE CENTRE</div>
+              <div class="infoBlock__content">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help. </div>
+              <div class="infoBlock__button"> 
+                <button class="infoBlock__button" type="button"><span class="infoBlock__button__text">MORE DETAILS</span></button>
+              </div>
+              <div class="infoBlock__location"> <i class="fa-solid fa-location-dot infoBlock__location__icon"></i><span class="infoBlock__location__text">Hong Kong - 1588 feet</span></div>
+            </div>
+            <div class="img-content"> 
+              <div class="img-content__color"></div>
+              <div class="img-content__city"><img class="img-content__img" src="./assets/img/we_do/blue-block-absolute.png" alt="town"/></div>
+            </div>
+          </div>
+        </div><!-- Slider main container -->
+        <div class="swiper swiper-custom">
+          <div class="swiper-title"> 
+            <h2>LATEST NEWS</h2>
+          </div><!-- Additional required wrapper -->
+          <div class="swiper-wrapper"></div><!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div><!-- If we need pagination -->
+          <div class="swiper-pagination"> </div><!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"> </div>
+          <div class="swiper-button-next"> </div><!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="header__burger">
-          <button class="burger" id="js-header-burger"><span class="line"></span><span class="line"></span><span class="line"></span></button>
-        </div>
-      </header>
-      <div class="banner">
-        <div class="banner__wrapper"><img class="banner__wrapper__bg" src="./assets/banner/banner_background_blue.png" alt=""/><img class="banner__wrapper__img" src="./assets/banner/banner_img.png" alt="city"/></div>
-        <h1 class="banner__title">SIMPLE & MODERN
-          <div class="banner__subTitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</div>
-        </h1>
       </div>
     </div>
-    <script src="./index.js"> </script>
+    <script defer type="module" src="./index.js"> </script>
   </body>
 </html>
