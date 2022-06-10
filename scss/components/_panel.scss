@@ -1,0 +1,30 @@
+.panel {
+  &__wrapper {
+    display: flex;
+  }
+
+  &__color-block {
+    // position: relative;
+    // p
+    // margin-right: 260px;
+    max-width: 585px;
+    width: 100%;
+    height: 470px;
+    background-color: $c-blue-sky;
+  }
+  &__image {
+    margin-left: -290px;
+    margin-top: 50px;
+  }
+
+  &--reverse {
+    .panel__wrapper {
+      flex-direction: row-reverse;
+    }
+
+    .panel__image {
+      margin-right: 0;
+      margin-right: 260px;
+    }
+  }
+}

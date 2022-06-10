@@ -1,22 +1,24 @@
 // colors
 $c-black: black;
 $c-white: white;
-$c-milk:#E5E5E5;
-$c-blue-sky:#55B7FF;
-$c-blue:#7E5AFF;
-$c-dark-gray:#2C4058;
+$c-milk: #e5e5e5;
+$c-blue-sky: #55b7ff;
+$c-blue: #7e5aff;
+$c-dark-gray: #2c4058;
 
-$g-linear-gradient:linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
-
-
+$g-linear-gradient: linear-gradient(
+  243.43deg,
+  $c-blue 16.9%,
+  $c-blue-sky 83.27%
+);
 
 // fonts
-$f-montserrat: 'Montserrat', sans-serif;
-$f-openSans: 'Open Sans', sans-serif;
-$f-sourceSansPro: 'Source Sans Pro', sans-serif;
+$f-montserrat: "Montserrat", sans-serif;
+$f-openSans: "Open Sans", sans-serif;
+$f-sourceSansPro: "Source Sans Pro", sans-serif;
 
 // font size
-$fs-14:14+px;
-$fs-18:18+px;
-$fs-22:22+px;
-$fs-44:44+px;
+$fs-14: 14px;
+$fs-18: 18px;
+$fs-22: 22px;
+$fs-44: 44px;

@@ -25,9 +25,9 @@
 </defs>
 </svg>
 
-    <div class="container">
-      <div class="wrapper"> 
-        <header class="header"> 
+    <div class="app"> 
+      <header class="header"> 
+        <div class="header__container container">
           <div class="header__logo">
             <div class="logo"> <img class="logo__img" src="./assets/img/logo.png" alt="logo"/></div>
           </div>
@@ -71,62 +71,47 @@
           <div class="header__burger">
             <button class="burger" id="js-header-burger"><span class="line"></span><span class="line"></span><span class="line"></span></button>
           </div>
-        </header>
-        <div class="banner">
-          <div class="banner__wrapper">
-            <div class="banner__wrapper__bg"></div><img class="banner__wrapper__img" src="./assets/banner/banner_img.png" alt="city"/>
-          </div>
-          <h1 class="banner__title">SIMPLE & MODERN
-            <div class="banner__subTitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</div>
+        </div>
+      </header>
+      <div class="banner">
+        <div class="banner__wrapper"><img class="banner__wrapper__image" src="./assets/banner/banner_img.png" alt="city"/>
+          <h1 class="banner__wrapper__title">SIMPLE & MODERN
+            <div class="banner__wrapper__subTitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</div>
           </h1>
         </div>
-        <div class="we-do">
-          <div class="we-do__border"></div>
-          <h2 class="we-do__title">WHAT WE DO </h2>
-          <div class="we-do__imgBlock"> 
-            <div class="imgBlock"> 
-              <div class="imgBlock__color"></div>
-              <div class="imgBlock__city"><img class="imgBlock__img" src="./assets/img/we_do/blue-sky-absolute.png" alt="town"/></div>
-            </div>
-            <div class="infoBlock">
-              <div class="infoBlock__subtitle">ONE WORLD</div>
-              <div class="infoBlock__title">TRADE CENTER</div>
-              <div class="infoBlock__content">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful. </div>
-              <div class="infoBlock__button"> 
-                <button class="infoBlock__button" type="button"><span class="infoBlock__button__text">MORE DETAILS</span></button>
+      </div>
+      <div class="we-do">
+        <div class="we-do__wrapper">
+          <h2 class="we-do__title">WHAT WE DO 
+            <div class="we-do__content">
+              <div class="panel">
+                <div class="panel__wrapper"> 
+                  <div class="panel__color-block"></div>
+                  <div class="panel__image"><img src="./assets/img/we_do/blue-sky-absolute.png" alt=""/></div>
+                </div>
               </div>
-              <div class="infoBlock__location"> <i class="fa-solid fa-location-dot infoBlock__location__icon"></i><span class="infoBlock__location__text">New York City, United States - 1776 feet </span></div>
-            </div>
-          </div>
-          <div class="we-do__content">
-            <div class="infoBlock">
-              <div class="infoBlock__subtitle">INTERNATIONAL</div>
-              <div class="infoBlock__title">COMMERCE CENTRE</div>
-              <div class="infoBlock__content">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help. </div>
-              <div class="infoBlock__button"> 
-                <button class="infoBlock__button" type="button"><span class="infoBlock__button__text">MORE DETAILS</span></button>
+              <div class="panel panel--reverse">
+                <div class="panel__wrapper"> 
+                  <div class="panel__color-block"></div>
+                  <div class="panel__image"><img src="./assets/img/we_do/blue-sky-absolute.png" alt=""/></div>
+                </div>
               </div>
-              <div class="infoBlock__location"> <i class="fa-solid fa-location-dot infoBlock__location__icon"></i><span class="infoBlock__location__text">Hong Kong - 1588 feet</span></div>
             </div>
-            <div class="img-content"> 
-              <div class="img-content__color"></div>
-              <div class="img-content__city"><img class="img-content__img" src="./assets/img/we_do/blue-block-absolute.png" alt="town"/></div>
-            </div>
-          </div>
-        </div><!-- Slider main container -->
-        <div class="swiper swiper-custom">
-          <div class="swiper-title"> 
-            <h2>LATEST NEWS</h2>
-          </div><!-- Additional required wrapper -->
-          <div class="swiper-wrapper"></div><!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div><!-- If we need pagination -->
-          <div class="swiper-pagination"> </div><!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"> </div>
-          <div class="swiper-button-next"> </div><!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          </h2>
         </div>
+      </div><!-- Slider main container -->
+      <div class="swiper swiper-custom">
+        <div class="swiper-title"> 
+          <h2>LATEST NEWS</h2>
+        </div><!-- Additional required wrapper -->
+        <div class="swiper-wrapper"></div><!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div><!-- If we need pagination -->
+        <div class="swiper-pagination"> </div><!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"> </div>
+        <div class="swiper-button-next"> </div><!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
       </div>
     </div>
     <script defer type="module" src="./index.js"> </script>

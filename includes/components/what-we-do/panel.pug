@@ -1,0 +1,8 @@
+mixin panel(reverseMode)
+  - const classes = reverseMode ? 'panel--reverse':''
+  
+  .panel(class=classes)
+    .panel__wrapper  
+      .panel__color-block
+      .panel__image
+        img(src="./assets/img/we_do/blue-sky-absolute.png", alt="")

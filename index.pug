@@ -21,10 +21,9 @@ html(lang="en")
     script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
   body
     include ./assets/svg/symbol-defs.svg
-    .container
-      .wrapper 
-        +header()
-        +main_banner()
-        +we-do()
-        +slider()
+    .app 
+      +header()
+      +banner()
+      +we-do()
+      +slider()
     script(defer type="module" src="./index.js") 

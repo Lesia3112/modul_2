@@ -1,14 +1,15 @@
 mixin header()
   header.header  
-    .header__logo
-      +logo()
-    #js-header-block.header__block
-      .header__block__navigation
-        +navigation()
-      .header__block__social
-        +social()
-    .header__burger
-      button#js-header-burger.burger(type=button name=button )
-        span.line
-        span.line
-        span.line
+    .header__container.container
+      .header__logo
+        +logo()
+      #js-header-block.header__block
+        .header__block__navigation
+          +navigation()
+        .header__block__social
+          +social()
+      .header__burger
+        button#js-header-burger.burger(type=button name=button )
+          span.line
+          span.line
+          span.line

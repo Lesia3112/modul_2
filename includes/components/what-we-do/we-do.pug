@@ -1,12 +1,15 @@
-include ./content
-include ./content-revers
+//- include ./content
+//- include ./content-revers
 
 mixin we-do()
   .we-do
-    .we-do__border
-    h2.we-do__title WHAT WE DO 
-    .we-do__imgBlock 
-      +content()
-    .we-do__content
-      +content-revers()
+    .we-do__wrapper
+      h2.we-do__title WHAT WE DO 
+        .we-do__content
+          +panel(false)
+          +panel(true)
+    //- .we-do__imgBlock 
+    //-   +content()
+    //- .we-do__content
+    //-   +content-revers()
     
