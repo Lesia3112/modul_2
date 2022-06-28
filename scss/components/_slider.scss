@@ -1,0 +1,31 @@
+.slider {
+  padding: 50px;
+  text-align: center;
+  background: $g-linear-gradient;
+  width: 100%;
+
+  // &__wrapper {
+  // }
+
+  &__image {
+      width: 100%;
+      background-size: cover;
+      opacity: 0.5;
+  }
+
+  &__line {
+    border: 1px solid $c-white;
+    width: 76px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $f-montserrat;
+    font-size: $fs-44;
+    font-weight: 700;
+    line-height: 50px;
+    color: $c-white;
+    max-width: 250px;
+    margin: 100px auto 50px auto;
+  }
+}

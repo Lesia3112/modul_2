@@ -1,7 +1,6 @@
 include ./includes/elements/index
 include ./includes/components/index
 
-
 doctype html
 html(lang="en")
   head
@@ -12,18 +11,26 @@ html(lang="en")
     //- normalize
     link(rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
     //- fontawesome
-    script(src="https://kit.fontawesome.com/65ada48525.js" crossorigin="anonymous")
+    script(src="https://kit.fontawesome.com/04d112062e.js" crossorigin="anonymous")
     //- Swiper
     link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
     //- local style
     link(rel="stylesheet" href="index.css")
     //- Scripts
     script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+    script(defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiVrkuAgvMKf0RdJEFRJr2YN-7olUdJw&amp;region=EN&amp;language=en&amp;callback=initMap&amp;v=weekly")
   body
+    //- svg
     include ./assets/svg/symbol-defs.svg
+    //- app
     .app 
-      +header()
-      +banner()
-      +we-do()
-      +slider()
-    script(defer type="module" src="./index.js") 
+      //- +header()
+      //- +banner()
+      //- +we-do()
+      //- +slider()
+      //- +get-in-touch()
+      .map(id='js-map') uygkjyg
+      //- +footer()
+
+    script(src="./index.js") 
+

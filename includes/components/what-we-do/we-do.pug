@@ -4,12 +4,10 @@
 mixin we-do()
   .we-do
     .we-do__wrapper
+      .we-do__border
       h2.we-do__title WHAT WE DO 
-        .we-do__content
-          +panel(false)
-          +panel(true)
-    //- .we-do__imgBlock 
-    //-   +content()
-    //- .we-do__content
-    //-   +content-revers()
+      .we-do__content
+        +panel(false,'ONE WORLD','TRADE CENTER','New York City, United States - 1776 feet')
+        +panel(true, 'INTERNATIONAL','COMMERCE CENTRE','Hong Kong - 1588 feet')
+    
     

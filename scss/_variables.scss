@@ -5,12 +5,15 @@ $c-milk: #e5e5e5;
 $c-blue-sky: #55b7ff;
 $c-blue: #7e5aff;
 $c-dark-gray: #2c4058;
+$c-gray: #4B5562;
 
 $g-linear-gradient: linear-gradient(
+ 
   243.43deg,
-  $c-blue 16.9%,
-  $c-blue-sky 83.27%
-);
+    $c-blue 16.9%,
+    $c-blue-sky 83.27%
+  );
+
 
 // fonts
 $f-montserrat: "Montserrat", sans-serif;

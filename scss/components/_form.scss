@@ -1,0 +1,38 @@
+.form {
+
+  &__wrapper {
+    height: 290px;
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    font-family: $f-montserrat;
+    font-size: $fs-18;
+    line-height: 27px;
+    height: 50px;
+    max-width: 310px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $c-gray;
+    outline: none;
+
+    &.error {
+      border-bottom: 3px solid red;
+    }
+    &:active {
+      border-bottom: 2px solid $c-dark-gray
+    }
+    &:hover {
+      border-bottom: solid $c-blue-sky;
+    }
+  }
+  &__button {
+    margin-left: 170px;
+    width: 140px;
+    height: 50px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+}

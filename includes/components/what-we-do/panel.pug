@@ -1,8 +1,24 @@
-mixin panel(reverseMode)
-  - const classes = reverseMode ? 'panel--reverse':''
+mixin panel(reverseMode,subtitle,title,location)
+  - const classes = reverseMode ? 'panel--reverse' : ''
+  - const imageSrc = reverseMode ? './assets/img/we_do/blue-block-absolute.png' : './assets/img/we_do/blue-sky-absolute.png'
   
+  //- - const infoText = 'Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.'
+  //- - const infoTextReverse = 'Successful businesses have many things in common, today well look at the big of recognition and how a digital advertising network may help.'
+  //- - const textInfo = reverseMode ? 'infoText' : 'infoTextReverse'
+
+
   .panel(class=classes)
-    .panel__wrapper  
+    .container.panel__wrapper 
       .panel__color-block
       .panel__image
-        img(src="./assets/img/we_do/blue-sky-absolute.png", alt="")
+        img(src=imageSrc alt="blue-sky-absolute")
+      .panel__info-block 
+        h2.panel__info-block__subtitle= subtitle 
+        h1.panel__info-block__title= title 
+        .panel__info-block__text Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+        button.panel__info-block__button(type='button') 
+          span.panel__info-block__button-text MORE DETAILS
+        .panel__info-block__location 
+          i.fa-solid.fa-location-dot
+          span= location
+
