@@ -1,7 +1,12 @@
 mixin banner()
   .banner
+    //- обгортка
     .banner__wrapper
-      img.banner__image(src="./assets/banner/banner_img.png", alt="city")
+      //- картинка
+      img.banner__image(src="./assets/banner/banner_img.png" alt="city")
+      //- обгортка для заголовка
       .banner__title-wrapper
+        //- заголовок
         h1.banner__title SIMPLE & MODERN
-        .banner__subTitle WE MAKE THE WORLD BEAUTIFUL EVERYDAY
+          //- підзаголовок
+          .banner__subTitle WE MAKE THE WORLD BEAUTIFUL EVERYDAY

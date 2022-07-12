@@ -1,7 +1,28 @@
 {
+  "name": "module_2",
+  "version": "1.0.0",
+  "description": "some",
+  "main": "index.js",
   "dependencies": {
     "pug": "^3.0.2",
     "scss": "^0.2.4",
     "swiper": "^8.2.4"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lesia3112/modul_2.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "lmachiha31@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lesia3112/modul_2/issues"
+  },
+  "homepage": "https://github.com/Lesia3112/modul_2#readme"
 }

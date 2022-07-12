@@ -1,11 +1,21 @@
 mixin footer()
   footer.footer 
+    //- футер враппер
     .footer__wrapper
+      //- + блок з контактами і формою
+      +get-in-touch()
+      //- блок з картинкою
       .footer__image-block
+        //- картинка
         img.footer__image-block__img(src="./assets/img/image-footer.png" alt="city")
-    .footer__content-block.containerFooter
-      .footer__content
-        +logo()
-        .footer__social
-          +social()
-      .footer__copyright Copyright &#169; 2020 Montichello
+      //- блок з контентом футера
+      .footer__content-block.containerFooter
+        //- обгортка для  лого і іконок соц мереж
+        .footer__content
+          //- + блок з логотипом
+          +logo()
+          .footer__social
+            //- + блок з іконками соцмереж
+            +social()
+        //- текст 
+        .footer__copyright Copyright &#169; 2020 Montichello

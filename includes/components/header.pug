@@ -1,14 +1,21 @@
 mixin header()
-  header.header  
+  header.header#js-header 
+    //- контейнер хедера
     .header__container.container
+      //- обгортка для лого
       .header__logo
+        //- блок з лого
         +logo()
       #js-header-block.header__block
+        //- блок з навігацією
         .header__block__navigation
           +navigation()
+        //- блок з іконками соцмереж
         .header__block__social
           +social()
+      //- бургер
       .header__burger
+        //- бургер кнопка
         button#js-header-burger.burger(type=button name=button )
           span.line
           span.line

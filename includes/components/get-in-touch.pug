@@ -1,37 +1,47 @@
 mixin get-in-touch()
-  .getInTouch.container
+  .getInTouch#contacts
+    //- контейнер
     .getInTouch__wrapper.containerFooter
-      img.getInTouch__image(src="./assets/img/contact-image.png" alt="town")
-      //- title
-      .getInTouch__border
+      img.getInTouch__wrapper__image(src="./assets/img/contact-image.png" alt="town")
+      //- лінія над заголовком
+      .getInTouch__line
+      //- заголовок
       h1.getInTouch__title GET IN TOUCH 
-      //- content
+      //- контент
       .getInTouch__content 
-        //- contact block
+        //- контакт блок
         .getInTouch__contacts 
+          //- адреса
           .getInTouch__adress 
             i.fa-solid.fa-location-dot
             span.getInTouch__text 91 Nolan Extension Suite 670
+          //- телефон
           .getInTouch__phone 
             i.fa-solid.fa-phone
-            span.getInTouch__text +001 356-868-2454 
+            span.getInTouch__text +001 356-868-2454
+          //- емейл
           .getInTouch__email
             i.fa-solid.fa-inbox
             span.getInTouch__text montichello@servise.com
+          //- час роботи
           .getInTouch__schedule 
             i.fa-solid.fa-clock
             span.getInTouch__text From 07:00AM to 19:30PM
         //- form registration block
         .getInTouch__registration 
+          //- форма
           form#js-form-registration.form(method="post") 
             .form__wrapper
               label.form__label
-                input#js-form-registration-user-name.form__input(name="userName" type="text" placeholder="Name")  
+                //- інпут для введення ім'я
+                input#js-form-registration-user-name.form__input(name="userName" type="text" minlength="2" placeholder="Name")  
               label.form__label
+                //- інпут для введення емейлу
                 input#js-form-registration-user-email.form__input(name="userEmail" type="email" placeholder="Email")
-              //-submit button 
               br
-              button.form__button(type="submit")
+              //-submit button 
+              button#js-submit-button.form__button(type="submit")
+                //- текст у кнопці
                 span.form__button__text SUBMIT
 
 

@@ -3,21 +3,24 @@
     padding-top: 100px;
     text-align: center;
   }
-  // &__border{
-  //     width: 100px;
-  //     height: 1px;
-  //     color: red;
-  //     margin-top: 50px;
-  // }
+  
+  &__line{
+    border: 1px solid $c-black;
+    width: 76px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
   &__title {
       // text-align: center;
       font-size: $fs-44;
       font-family: $f-montserrat;
       font-weight: 700;
       margin-bottom: 100px;
-      // border-top: 1px solid red ;
-
-      // width: 100px;
+      
+      @media(max-width:480px){
+        font-size: 30px;
+      }
     }
 }
 

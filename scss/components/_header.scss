@@ -6,10 +6,15 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 995;
   display: flex;
   align-items: center;
+  padding-right: 10px;
   // justify-content: space-between;
+
+  &__scroll {
+    background: $g-linear-gradient;
+  }
   &__container{
     display: flex;
     justify-content: space-between;
@@ -22,6 +27,7 @@
     width: 100%;
     &.show {
       display: block;
+      z-index: 20;
     }
     @media (max-width: 1024px) {
       position: fixed;
@@ -34,6 +40,9 @@
       background: $g-linear-gradient;
       padding-top: 25px;
       display: none;
+    }
+    @media (max-width: 480px) {
+      padding-right: 100px;
     }
     &__navigation {
       width: 100%;
@@ -51,9 +60,9 @@
 
   &__burger {
     display: block;
-    z-index: 3;
+    z-index: 999;
     
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
       display: none;
     }
   }

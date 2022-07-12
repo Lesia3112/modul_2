@@ -1,7 +1,20 @@
 mixin slider()
-  .slider.container 
+  .slider.container#news
     .slider__wrapper
       img.slider__image(src="./assets/img/banner/banner-2-news-city", alt="city")
       .slider__line
       h2.slider__title LATEST NEWS
       +swiper()
+      .slider__navigation
+        button#js-slider-button-next.slider__button-next(type="button")
+          i.fa-solid.fa-angle-right
+        button#js-slider-button-prev.slider__button-prev(type="button")
+          i.fa-solid.fa-angle-left
+      //- .slider__pagination.swiper-pagination
+      //-   span#js-pagination.slider__pagination__circle.swiper-pagination-bullet
+      //-   span#js-pagination.slider__pagination__circle.swiper-pagination-bullet
+      //-   span#js-pagination.slider__pagination__circle.swiper-pagination-bullet
+
+
+
+

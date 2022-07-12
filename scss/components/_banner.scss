@@ -1,48 +1,61 @@
 .banner {
   min-height: 100vh;
   width: 100%;
-  // position: relative;
   &__wrapper {
     width: 100%;
     background: $g-linear-gradient;
     display: block;
     position: relative;
     text-align: center;
-
   }
   &__image {
     width: 100%;
     min-height: 100vh;
     background-size: cover;
   }
-  
-
- 
-  &__title {
+  &__title-wrapper {
     position: absolute;
+    top: 40%;
+    bottom: 60%;
+    right: 0;
+    left: 0;
+    @media (max-width: 768px) {
+      top: 30%;
+    }
+    // @media (max-width: 480px) {
+    //   top: 30%;
+    // }
+    @media (max-width: 320px) {
+      top: 25%;
+    }
+  }
+
+  &__title {
+    // position: absolute;
     font-family: $f-montserrat;
     font-weight: 700;
     font-size: 80px;
     color: $c-white;
-   
-    top: 300px;
-    right: 0;
-    left: 0;
+    line-height: 97px;
+    letter-spacing: 0.1em;
+    // top: 300px;
+    // right: 0;
+    // left: 0;
 
-    
+    @media (max-width: 480px) {
+      font-size: 60px;
+    }
   }
   &__subTitle {
-    position: absolute;
+    // position: absolute;
     font-family: $f-montserrat;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: $c-white;
     letter-spacing: 0.3em;
-    
-    top:300;
-    right: 0;
-    left: 0;
+    // top: 200;
+    // right: 0;
+    // left: 0;
   }
 }
-  

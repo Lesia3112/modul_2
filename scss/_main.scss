@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body{
   color: $c-dark-gray;
@@ -37,13 +38,23 @@ body{
 }
 .swiper {
   max-width:900px;
-  height: 550px;
+  height: 650px;
+
+  @media(max-width:1024px){
+    max-width: 550px;
+  }
+  @media(max-width:768px){
+    max-width: 500px;
+  }
+  @media(max-width:480px){
+    max-width: 300px;
+  }
 }
-.map {
-  height: 600px;
-}
+
+
 img {
   width: 100%;
+  // overflow: hidden;
 }
 .error {
   border-bottom-color: red;

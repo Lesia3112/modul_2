@@ -10,27 +10,32 @@ html(lang="en")
     title Monticello
     //- normalize
     link(rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css")
-    //- fontawesome
-    script(src="https://kit.fontawesome.com/04d112062e.js" crossorigin="anonymous")
     //- Swiper
     link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
     //- local style
-    link(rel="stylesheet" href="index.css")
     //- Scripts
     script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
-    script(defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiVrkuAgvMKf0RdJEFRJr2YN-7olUdJw&amp;region=EN&amp;language=en&amp;callback=initMap&amp;v=weekly")
+    //- fontawesome
+    script(src="https://kit.fontawesome.com/04d112062e.js" crossorigin="anonymous")
+    //- Script MAP
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiVrkuAgvMKf0RdJEFRJr2YN-7olUdJw&amp;region=EN&amp;language=en&amp;callback=initMap&amp;v=weekly")
+    //- link css
+    link(rel="stylesheet" href="index.css")
   body
+    //- #js-map(style="height:400px")
     //- svg
     include ./assets/svg/symbol-defs.svg
     //- app
     .app 
-      //- +header()
-      //- +banner()
-      //- +we-do()
-      //- +slider()
-      //- +get-in-touch()
-      .map(id='js-map') uygkjyg
-      //- +footer()
+      +header()
+      +banner()
+      +we-do()
+      +slider()
+      +map()
+      +footer()
+      button#js-button-test(type="button")
+        span test
 
-    script(src="./index.js") 
+    script(src="./map.js")
+    script(defer src="./index.js") 
 

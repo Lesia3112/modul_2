@@ -20,5 +20,9 @@
     &:last-child{
       margin-right: 0;
     }
+    @media (max-width: 320px) {
+      height: 30px;
+      width: 30px;
+    }
   }
 }

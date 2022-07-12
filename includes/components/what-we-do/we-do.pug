@@ -1,13 +1,13 @@
-//- include ./content
-//- include ./content-revers
-
 mixin we-do()
-  .we-do
+  .we-do#project
+    //- обгортка
     .we-do__wrapper
-      .we-do__border
+      //- лінія
+      .we-do__line
+      //- заголовок
       h2.we-do__title WHAT WE DO 
+      //- основний контент 
       .we-do__content
         +panel(false,'ONE WORLD','TRADE CENTER','New York City, United States - 1776 feet')
         +panel(true, 'INTERNATIONAL','COMMERCE CENTRE','Hong Kong - 1588 feet')
-    
-    
+

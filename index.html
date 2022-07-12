@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <script src="https://kit.fontawesome.com/04d112062e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD10cqCnWoKBFIRi563eUKkfLxjbiVYR-E&amp;amp;region=EN&amp;amp;language=en&amp;amp;callback=initMap&amp;amp;v=weekly"></script>
+    <script src="https://kit.fontawesome.com/04d112062e.js" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiVrkuAgvMKf0RdJEFRJr2YN-7olUdJw&amp;amp;region=EN&amp;amp;language=en&amp;amp;callback=initMap&amp;amp;v=weekly"></script>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body><svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
@@ -26,8 +26,209 @@
   </defs>
 </svg>
     <div class="app"> 
-      <div class="map" id="js-map">uygkjyg</div>
+      <header class="header" id="js-header"> 
+        <div class="header__container container">
+          <div class="header__logo">
+            <div class="logo"> <img class="logo__img" src="./assets/img/logo.png" alt="logo"/></div>
+          </div>
+          <div class="header__block" id="js-header-block">
+            <div class="header__block__navigation">
+              <div class="navigation"> 
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href=""> <span>ABOUT US</span></a>
+                </div>
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href="#project"> <span>PROJECT</span></a>
+                </div>
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href="#news"> <span>NEWS</span></a>
+                </div>
+                <div class="navigation__item"> 
+                  <div class="navigation__item__circle"> </div><a class="navigation__item__link" href="#contacts"> <span>CONTACT</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="header__block__social">
+              <div class="social"> 
+                <div class="social__icon">
+                  <svg class="icon icon-fb">
+                    <use xlink:href="#icon-fb"></use>
+                  </svg>
+                </div>
+                <div class="social__icon">
+                  <svg class="icon icon-inst">
+                    <use xlink:href="#icon-inst"></use>
+                  </svg>
+                </div>
+                <div class="social__icon">
+                  <svg class="icon icon-tv">
+                    <use xlink:href="#icon-tv"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__burger">
+            <button class="burger" id="js-header-burger"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+          </div>
+        </div>
+      </header>
+      <div class="banner">
+        <div class="banner__wrapper"><img class="banner__image" src="./assets/banner/banner_img.png" alt="city"/>
+          <div class="banner__title-wrapper">
+            <h1 class="banner__title">SIMPLE & MODERN
+              <div class="banner__subTitle">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</div>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="we-do" id="project">
+        <div class="we-do__wrapper">
+          <div class="we-do__line"></div>
+          <h2 class="we-do__title">WHAT WE DO </h2>
+          <div class="we-do__content">
+            <div class="container panel__wrapper"> 
+              <div class="panel__color-block"></div>
+              <div class="panel__image"><img src="./assets/img/we_do/blue-sky-absolute.png" alt="blue-sky-absolute"/></div>
+              <div class="panel__info-block"> 
+                <h2 class="panel__info-block__subtitle">ONE WORLD</h2>
+                <h1 class="panel__info-block__title">TRADE CENTER</h1>
+                <div class="panel__info-block__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</div>
+                <button class="panel__info-block__button" type="button"> <span class="panel__info-block__button-text">MORE DETAILS</span></button>
+                <div class="panel__info-block__location"> <i class="fa-solid fa-location-dot"></i><span>New York City, United States - 1776 feet</span></div>
+              </div>
+            </div>
+            <div class="container panel__wrapper"> 
+              <div class="panel__color-block"></div>
+              <div class="panel__image"><img src="./assets/img/we_do/blue-block-absolute.png" alt="blue-sky-absolute"/></div>
+              <div class="panel__info-block"> 
+                <h2 class="panel__info-block__subtitle">INTERNATIONAL</h2>
+                <h1 class="panel__info-block__title">COMMERCE CENTRE</h1>
+                <div class="panel__info-block__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</div>
+                <button class="panel__info-block__button" type="button"> <span class="panel__info-block__button-text">MORE DETAILS</span></button>
+                <div class="panel__info-block__location"> <i class="fa-solid fa-location-dot"></i><span>Hong Kong - 1588 feet</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider container" id="news">
+        <div class="slider__wrapper"><img class="slider__image" src="./assets/img/banner/banner-2-news-city" alt="city"/>
+          <div class="slider__line"></div>
+          <h2 class="slider__title">LATEST NEWS</h2><!-- Slider main container -->
+          <div class="swiper swiper-custom"><!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper-custom__wrapper"><!-- Slides -->
+              <div class="swiper-slide swiper-card">
+                <div class="swiper-card__image-block"><img src="./assets/img/slider/image1.jpg" alt="town"/></div>
+                <div class="swiper-card__wrapper">
+                  <h2 class="swiper-card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h2><span class="swiper-card__content">Free directories: directories ...</span>
+                  <div class="swiper-card__user-info"> 
+                    <div class="swiper-card__user-image"><img class="swiper-card__user-photo" src="./assets/img/slider/photo-user1.jpg" alt="user"/></div>
+                    <div class="swiper-card__user-name">ALJA </br> BRUN</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-card">
+                <div class="swiper-card__image-block"><img src="./assets/img/slider/image2.jpg" alt="town"/></div>
+                <div class="swiper-card__wrapper">
+                  <h2 class="swiper-card-title">EFFECTIVE ADVERTISING POINTERS.</h2><span class="swiper-card__content">Having a home based business is a wonderful asset to ...</span>
+                  <div class="swiper-card__user-info"> 
+                    <div class="swiper-card__user-image"> <img src="./assets/img/slider/photo-user2.jpg" alt="user"/></div>
+                    <div class="swiper-card__user-name">DOMINIC </br> FREEMAN</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-card">
+                <div class="swiper-card__image-block"><img src="./assets/img/slider/image3.jpg" alt="town"/></div>
+                <div class="swiper-card__wrapper">
+                  <h2 class="swiper-card-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h2><span class="swiper-card__content">There are many things that are important to catalog design...</span>
+                  <div class="swiper-card__user-info"> 
+                    <div class="swiper-card__user-image"> <img src="./assets/img/slider/photo-user3.jpg" alt="user"/></div>
+                    <div class="swiper-card__user-name">ALICE </br> WARD</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-card">
+                <div class="swiper-card__image-block"><img src="./assets/img/slider/image1.jpg" alt="town"/></div>
+                <div class="swiper-card__wrapper">
+                  <h2 class="swiper-card-title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h2><span class="swiper-card__content">Free directories: directories ...</span>
+                  <div class="swiper-card__user-info"> 
+                    <div class="swiper-card__user-image"><img class="swiper-card__user-photo" src="./assets/img/slider/photo-user1.jpg" alt="user"/></div>
+                    <div class="swiper-card__user-name">ALJA </br> BRUN</div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- If we need pagination -->
+            <div class="swiper-pagination"> </div><!-- If we need navigation buttons -->
+<!-- If we need scrollbar -->
+          </div>
+          <div class="slider__navigation">
+            <button class="slider__button-next" id="js-slider-button-next" type="button"><i class="fa-solid fa-angle-right"></i></button>
+            <button class="slider__button-prev" id="js-slider-button-prev" type="button"><i class="fa-solid fa-angle-left"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="map"> <img class="map__image" src="./assets/img/Map.png" alt="map"/></div>
+      <footer class="footer"> 
+        <div class="footer__wrapper">
+          <div class="getInTouch" id="contacts">
+            <div class="getInTouch__wrapper containerFooter"><img class="getInTouch__wrapper__image" src="./assets/img/contact-image.png" alt="town"/>
+              <div class="getInTouch__line"></div>
+              <h1 class="getInTouch__title">GET IN TOUCH </h1>
+              <div class="getInTouch__content"> 
+                <div class="getInTouch__contacts"> 
+                  <div class="getInTouch__adress"> <i class="fa-solid fa-location-dot"></i><span class="getInTouch__text">91 Nolan Extension Suite 670</span></div>
+                  <div class="getInTouch__phone"> <i class="fa-solid fa-phone"></i><span class="getInTouch__text">+001 356-868-2454</span></div>
+                  <div class="getInTouch__email"><i class="fa-solid fa-inbox"></i><span class="getInTouch__text">montichello@servise.com</span></div>
+                  <div class="getInTouch__schedule"> <i class="fa-solid fa-clock"></i><span class="getInTouch__text">From 07:00AM to 19:30PM</span></div>
+                </div>
+                <div class="getInTouch__registration"> 
+                  <form class="form" id="js-form-registration" method="post"> 
+                    <div class="form__wrapper">
+                      <label class="form__label">
+                        <input class="form__input" id="js-form-registration-user-name" name="userName" type="text" minlength="2" placeholder="Name"/>
+                      </label>
+                      <label class="form__label">
+                        <input class="form__input" id="js-form-registration-user-email" name="userEmail" type="email" placeholder="Email"/>
+                      </label><br/>
+                      <button class="form__button" id="js-submit-button" type="submit"><span class="form__button__text">SUBMIT</span></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__image-block"><img class="footer__image-block__img" src="./assets/img/image-footer.png" alt="city"/></div>
+          <div class="footer__content-block containerFooter">
+            <div class="footer__content">
+              <div class="logo"> <img class="logo__img" src="./assets/img/logo.png" alt="logo"/></div>
+              <div class="footer__social">
+                <div class="social"> 
+                  <div class="social__icon">
+                    <svg class="icon icon-fb">
+                      <use xlink:href="#icon-fb"></use>
+                    </svg>
+                  </div>
+                  <div class="social__icon">
+                    <svg class="icon icon-inst">
+                      <use xlink:href="#icon-inst"></use>
+                    </svg>
+                  </div>
+                  <div class="social__icon">
+                    <svg class="icon icon-tv">
+                      <use xlink:href="#icon-tv"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__copyright">Copyright &#169; 2020 Montichello</div>
+          </div>
+        </div>
+      </footer>
+      <button id="js-button-test" type="button"><span>test</span></button>
     </div>
-    <script src="./index.js"> </script>
+    <script src="./map.js"></script>
+    <script defer src="./index.js"> </script>
   </body>
 </html>

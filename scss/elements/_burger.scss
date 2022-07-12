@@ -12,6 +12,11 @@
   border: 1px solid $c-white;
   z-index: 5;
 
+  @media (max-width: 380px) {
+  height: 40px;
+    
+  }
+
   &:hover {
     background:transparent;
   }
