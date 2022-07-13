@@ -10,25 +10,31 @@
   display: flex;
   align-items: center;
   padding-right: 10px;
-  // justify-content: space-between;
 
+  // зміна беграунду хедера при скролі
   &__scroll {
     background: $g-linear-gradient;
   }
-  &__container{
+
+  // контейнер для хедера
+  &__container {
     display: flex;
     justify-content: space-between;
   }
-  
+
+  // блок для навігації і соцмереж
   &__block {
     display: flex;
     justify-content: end;
     align-items: center;
     width: 100%;
+
     &.show {
       display: block;
       z-index: 20;
     }
+
+    // зміна на модальне вікно навігації
     @media (max-width: 1024px) {
       position: fixed;
       right: 0;
@@ -44,12 +50,17 @@
     @media (max-width: 480px) {
       padding-right: 100px;
     }
+
+    // навігація обгортка
     &__navigation {
       width: 100%;
     }
+
+    // іконки соцмереж , обгортка
     &__social {
       max-width: 180px;
       width: 100%;
+
       @media (max-width: 1024px) {
         display: flex;
         justify-content: center;
@@ -58,10 +69,11 @@
     }
   }
 
+  // бургер обгортка
   &__burger {
     display: block;
     z-index: 999;
-    
+
     @media (min-width: 1025px) {
       display: none;
     }

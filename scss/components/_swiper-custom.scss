@@ -1,13 +1,21 @@
 .swiper-custom {
   overflow: hidden;
   &__wrapper {
-    // display: flex;
-    // // overflow: hidden;
-    // align-items: center;
-    // justify-content: space-between;
     min-width: 0;
-
   }
-  
+}
 
+.swiper {
+  max-width:900px;
+  height: 650px;
+
+  @media(max-width:1024px){
+    max-width: 550px;
+  }
+  @media(max-width:768px){
+    max-width: 500px;
+  }
+  @media(max-width:480px){
+    max-width: 300px;
+  }
 }

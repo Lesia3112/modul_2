@@ -4,10 +4,10 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-body{
+
+body {
   color: $c-dark-gray;
   font-size: $fs-18;
-
 }
 
 .container {
@@ -17,6 +17,7 @@ body{
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .containerFooter {
   max-width: 770px;
   width: 100%;
@@ -24,6 +25,7 @@ body{
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -33,32 +35,15 @@ body{
   fill: currentColor;
   color: $c-white;
 }
+
 .show {
   display: block;
 }
-.swiper {
-  max-width:900px;
-  height: 650px;
-
-  @media(max-width:1024px){
-    max-width: 550px;
-  }
-  @media(max-width:768px){
-    max-width: 500px;
-  }
-  @media(max-width:480px){
-    max-width: 300px;
-  }
-}
-
 
 img {
   width: 100%;
-  // overflow: hidden;
 }
+
 .error {
   border-bottom-color: red;
 }
-
-
-

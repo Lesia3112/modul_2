@@ -1,27 +1,21 @@
-@import'./header';
-@import'./navigation';
-@import'./social';
-@import'./banner';
-@import'./we-do';
-@import'./img-block';
-@import'./info-block';
-// @import'./info-content';
-@import'./img-content';
-@import'./panel';
+// Header
+@import './header';
+@import './navigation';
+@import './social';
+// основний блок з назвою
+@import './banner';
+// блок WHAT WE DO
+@import './we-do';
+@import './panel';
 // slider style
-@import'./slider';
-@import'./swiper-custom';
-@import'./swiper-card';
-@import'./footer';
-// contact block
-@import'./get-in-touch';
-// form
-@import'./form';
-@import'./map';
-
-
-
-
-
-
-
+@import './slider';
+@import './swiper-custom';
+@import './swiper-card';
+// футер
+@import './footer';
+// контакт блок
+@import './get-in-touch';
+// форма
+@import './form';
+// карта
+@import './map';

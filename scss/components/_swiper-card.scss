@@ -5,13 +5,14 @@
   margin-bottom: 100px;
   margin-right: 50px;
   overflow: hidden;
-  
 
+  // обгортка для блоку з картинкою
   &__image-block {
     width: 100%;
     display: flex;
   }
 
+  // обгортка для текстового блоку
   &__wrapper {
     padding: 10px;
     padding-top: 30px;
@@ -21,6 +22,7 @@
     height: 100%;
   }
 
+  // заголовок
   &__title {
     font-family: $f-montserrat;
     font-size: $fs-22;
@@ -28,6 +30,7 @@
     line-height: 27px;
   }
 
+  // основний текст
   &__content {
     font-family: $f-openSans;
     font-size: $fs-18;
@@ -35,11 +38,15 @@
     line-height: 24px;
     background-color: $c-white;
   }
+
+  // блок з інформацією про користувача
   &__user-info {
     display: flex;
     align-items: center;
     margin-top: 30px;
   }
+
+  // фото користувача
   &__user-image {
     border: 1px solid $c-white;
     border-radius: 70%;
@@ -49,11 +56,7 @@
     width: 45px;
   }
 
-  // // &__user-photo {
-  // //   display: block;
-
-  // // }
-
+  // ім'я користувача
   &__user-name {
     margin-left: 10px;
   }

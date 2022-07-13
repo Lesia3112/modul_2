@@ -13,12 +13,11 @@
   z-index: 5;
 
   @media (max-width: 380px) {
-  height: 40px;
-    
+    height: 40px;
   }
 
   &:hover {
-    background:transparent;
+    background: transparent;
   }
 
   .line {
